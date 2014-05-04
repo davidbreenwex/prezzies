@@ -1,0 +1,166 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+<LinearLayout
+    android:id="@+id/prefsWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/reindeer_with_tree_200_trans2"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+    <TextView
+        android:id="@+id/headingPref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/settings_head"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/sett_height" />
+    
+     <!-- Line 1 -->
+    <View
+        android:id="@+id/line1Pref"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/red_dark" />
+        
+    <RadioGroup
+        android:id="@+id/soundGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+        <TextView
+            android:id="@+id/soundLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soundString"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <RadioButton
+            android:id="@+id/onRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/onString" />
+        <RadioButton
+            android:id="@+id/offRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/offString" />
+    </RadioGroup>
+     <!-- Line 2 -->
+    <View
+        android:id="@+id/line2Pref"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/red_dark" />
+    
+    <RadioGroup
+        android:id="@+id/backgroundGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+        <TextView
+            android:id="@+id/backgroundLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backgroundString"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <RadioButton
+            android:id="@+id/reindeerRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/reindeerString" />
+        <RadioButton
+            android:id="@+id/snowmanRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/snowmanString" />
+        <RadioButton
+            android:id="@+id/santaRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/santaString" />
+    </RadioGroup>
+    
+    <!-- Line 3 -->
+    <View
+        android:id="@+id/line3Pref"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/red_dark" />
+    
+    <RadioGroup
+        android:id="@+id/languageGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+        <TextView
+            android:id="@+id/languageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/languageString"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <RadioButton
+            android:id="@+id/englishRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/englishString" />
+        <RadioButton
+            android:id="@+id/frenchRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frenchString" />
+    </RadioGroup>
+    
+     <!-- Line 4 -->
+    <View
+        android:id="@+id/line4Pref"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/red_dark" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+        <Button
+            android:id="@+id/cancel_prefs"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelString"
+            android:layout_gravity="bottom" />
+        <Button
+            android:id="@+id/save_prefs"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/saveString"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

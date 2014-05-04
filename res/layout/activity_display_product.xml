@@ -1,0 +1,161 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:fillViewport="true"
+    tools:context=".DisplayProduct"
+    android:background="@color/white" >
+
+    <!-- Call this Layout: activity_display_gifts.xml -->
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <!-- Product image -->
+
+	    <ImageView
+	        android:id="@+id/giftImgDispGift"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_alignParentTop="true"
+	        android:contentDescription="@string/test_content_desc"
+	        android:paddingTop="20dp"
+	        android:paddingBottom="20dp" />
+
+        <!-- Product name -->
+
+        <TextView
+            android:id="@+id/full_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/giftImgDispGift"
+            android:text="@string/test_product_name"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <!-- Rating bar -->
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/full_product_name"
+            android:paddingTop="@dimen/full_details_padding"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:max="5" />
+        
+        <Button
+            android:id="@+id/ratingButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ratingButtonString"
+            android:onClick="showDialog" />
+
+        <!-- Horizontal line 1 -->
+
+        <View
+            android:id="@+id/line1DispGift"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ratingButton"
+            android:background="@color/red_dark" />
+
+        <!-- Product price -->
+
+        <TextView
+            android:id="@+id/full_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/line1DispGift"
+            android:paddingBottom="@dimen/full_details_padding"
+            android:paddingRight="@dimen/details_padding"
+            android:paddingTop="@dimen/full_details_padding"
+            android:text="@string/product_price_colon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grey_dark" />
+
+        <TextView
+            android:id="@+id/full_product_price_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1DispGift"
+            android:layout_toRightOf="@+id/full_product_price"
+            android:paddingTop="@dimen/full_details_padding"
+            android:text="@string/test_price_value"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- Horizontal line 2 -->
+
+        <View
+            android:id="@+id/line2DispGift"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/full_product_price"
+            android:background="@color/red_dark" />
+
+        <!-- Product description -->
+
+        <TextView
+            android:id="@+id/full_product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/line2DispGift"
+            android:paddingBottom="@dimen/full_product_description_padding"
+            android:paddingTop="@dimen/full_details_padding"
+            android:text="@string/product_description"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grey_dark" />
+
+        <TextView
+            android:id="@+id/full_product_description_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/full_product_description"
+            android:paddingBottom="@dimen/full_details_padding"
+            android:text="@string/product_description_value"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- Horizontal line 3 -->
+
+        <View
+            android:id="@+id/line3DispGift"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/full_product_description_value"
+            android:background="@color/red_dark" />
+
+        <!-- Product link -->
+
+        <Button
+            android:id="@+id/goToGiftBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/line3DispGift"
+            android:paddingBottom="@dimen/full_details_padding"
+            android:paddingTop="@dimen/full_details_padding"
+            android:text="@string/open_link"
+            android:onClick="goToGift" />
+
+        
+
+    </RelativeLayout>
+
+</ScrollView>

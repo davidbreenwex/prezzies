@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="app_name">Prezzies</string>
+    <string name="action_settings">Paramètres</string>
+	<string name="action_suggest">Proposer un Cadeau!</string>
+    <string name="title_activity_display_product">Afficher le Produit</string>
+    <string name="title_activity_search_results">Résultats de la Recherche</string>
+    
+    <!-- main_activity.xml strings -->
+    <string name="heading_main_activity">Trouvons le cadeau idéal!</string>
+    <string name="tv_gender">Trouver un cadeau pour:</string>
+    <string name="male_radio_button">Mâle</string>
+    <string name="female_radio_button">Femelle</string>
+    <string name="age_range">Tranche d\'âge:</string>
+    <string name="price_range">Gamme de Prix:</string>
+    <string name="btn_text">TROUVEZ PRESENT</string>
+    <string name="suggest_text">Vous n\'avez pas trouvé un cadeau que vous aimez?</string>
+    <string name="suggest_text2">Proposer un cadeau</string>
+    <string name="suggest_btn">Suggérer</string>
+    <string name="settings_btn">Paramètres</string>
+    
+    
+    <string-array name="age_range_array">
+        <item>0 &#8211; 3</item>
+        <item>4 &#8211; 6</item>
+        <item>7 &#8211; 9</item>
+        <item>10 &#8211; 14</item>
+        <item>15 &#8211; 18</item>
+        <item>19 &#8211; 24</item>
+        <item>25 &#8211; 30</item>
+        <item>31 &#8211; 40</item>
+        <item>41 &#8211; 55</item>
+        <item>55+</item>
+    </string-array>
+	
+    <string-array name="sort_by_array">
+        <item>Prix Ascendant</item>
+        <item>Prix Décroissant</item>
+        <item>Note Moyenne</item>
+    </string-array>
+    
+    
+    <!-- Product Strings -->
+
+    <string name="test_product_name">Stuffed animal</string>
+    <string name="product_price">Prix</string>
+    <string name="product_price_colon">Prix:</string>
+    <string name="test_price_value">€15</string>
+    <string name="product_description">Description:</string>
+    <string name="product_description_value">Blah blah blah</string>
+    <string name="open_link">LIEN POUR PRÉSENTER</string>
+
+    <!-- Content Descriptions -->
+
+    <string name="test_content_desc">Image d\'un jouet</string>
+    <string name="logo_content_desc">Image Logo</string>
+    <string name="static_img_content_desc">Image d\'une frontière de houx</string>
+    <string name="productName">Nom du Produit</string>
+    <string name="productPrice">Prix ​​du Produit</string>
+    <string name="contentDescription">Description de l\'Image </string>
+    <string name="ratingButtonString">Évaluez Produit</string>
+    <string name="sortBy">Trier Par:</string>
+    
+    <!-- Suggest Product -->
+
+    <string name="suggest_product">Proposer un Produit</string>
+    <string name="product_name">Nom du Produit</string>
+    <string name="product_description_suggest">Description du produit</string>
+    <string name="product_gender">Produit Sexe</string>
+    <string name="product_age_range">Produit Âges</string>
+    <string name="product_guide_price">Guide du Produit Prix</string>
+    <string name="product_link">Product Link(Amazon)</string>
+    <string name="add_product">Produit Lien</string>
+    <string name="title_activity_suggest_product">Proposer Produit</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_product">Ajouter un produit</string>
+	 <string name="title_activity_preferences">Paramétres</string>
+    
+    <!-- Preferences -->
+	<string name="soundString">Son</string>
+	<string name="onString">Allumer</string>
+	<string name="offString">Eteindre</string>
+	<string name="backgroundString">Fond</string>
+	<string name="reindeerString">Renne</string>
+	<string name="santaString">Père Noël</string>
+	<string name="snowmanString">Bonhomme de Neige</string>
+	<string name="languageString">Langue</string>
+	<string name="englishString">Anglais</string>
+	<string name="frenchString">Français</string>
+	<string name="saveString">Enregistrer</string>
+	<string name="cancelString">Annuler</string>
+	<string name="settings_head">Paramétres</string>
+	<string name="widgetOpen">open</string>
+	<string name="widgetTitle">Cadeau Du Jour</string>	
+	
+</resources>

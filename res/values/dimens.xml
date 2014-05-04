@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- ListView Product details padding -->
+    <dimen name="details_padding">20dp</dimen>
+    
+    <!-- Full Product details padding -->
+    <dimen name="full_details_padding">10dp</dimen>
+    <dimen name="full_product_description_padding">5dp</dimen>
+
+    <!-- Image padding -->
+    <dimen name="image_padding">5dp</dimen>
+    
+    <!-- Line height dimensions -->
+    <dimen name="line_height">2dp</dimen>
+    
+    <!-- Setting Heading -->
+    <dimen name="sett_height">25dp</dimen>
+    <dimen name="headingSize">32dp</dimen>
+    
+</resources>

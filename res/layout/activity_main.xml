@@ -1,0 +1,176 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/mainWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reindeer_with_tree_200_trans2"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <!-- Heading -->
+
+        <TextView
+            android:id="@+id/headingMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:text="@string/heading_main_activity"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- Line 1 -->
+
+        <View
+            android:id="@+id/line1Main"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/headingMain"
+            android:background="@color/red_dark" />
+
+        <!-- Gender selection -->
+
+        <TextView
+            android:id="@+id/genderMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/line1Main"
+            android:paddingBottom="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:text="@string/tv_gender"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/genderRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/genderMain"
+            android:layout_toRightOf="@+id/genderMain"
+            android:paddingTop="15dp" >
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/male_radio_button" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female_radio_button" />
+        </RadioGroup>
+
+        <!-- Line 2 -->
+
+
+        <!-- Age range selection -->
+
+        <TextView
+            android:id="@+id/ageMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/line2Main"
+            android:layout_marginBottom="50dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:text="@string/age_range"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- Line 3 -->
+
+
+        <!-- Price range selection -->
+
+        <TextView
+            android:id="@+id/sortMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/line3Main"
+            android:layout_marginBottom="50dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:text="@string/sortBy"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- Line 4 -->
+
+
+        <!-- Button -->
+
+        <View
+            android:id="@+id/line3Main"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignRight="@+id/ageSpinnerMain"
+            android:layout_below="@+id/ageSpinnerMain"
+            android:background="@color/red_dark" />
+        
+        <Button
+            android:id="@+id/findGiftBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/line4Main"
+            android:layout_marginTop="41dp"
+            android:onClick="findGifts"
+            android:text="@string/btn_text" />
+
+        <Spinner
+            android:id="@+id/sortSpinnerMain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/line4Main"
+            android:layout_alignTop="@+id/sortMain"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="42dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="5dp" />
+
+        <View
+            android:id="@+id/line4Main"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignLeft="@+id/findGiftBtn"
+            android:layout_below="@+id/sortSpinnerMain"
+            android:background="@color/red_dark" />
+
+        <Spinner
+            android:id="@+id/ageSpinnerMain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ageMain"
+            android:layout_alignTop="@+id/ageMain"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" />
+
+        <View
+            android:id="@+id/line2Main"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_alignLeft="@+id/ageMain"
+            android:layout_below="@+id/genderMain"
+            android:layout_marginTop="48dp"
+            android:background="@color/red_dark" />
+
+       
+
+    </RelativeLayout>
+
+</ScrollView>
